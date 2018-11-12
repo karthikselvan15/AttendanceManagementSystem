@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.karthi.attendance">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Home" />
+        <activity android:name=".Admin" />
+        <activity android:name=".Account" />
+        <activity android:name=".Add" />
+        <activity android:name=".Remove" />
+        <activity android:name=".AddNotification" />
+        <activity android:name=".Employeelist" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Listview" />
+        <activity android:name=".Notification" />
+        <activity android:name=".MarkAttendance" />
+        <activity android:name=".MA_Listview" />
+        <activity android:name=".ForgetPassword" />
+        <activity android:name=".Otp" />
+        <activity android:name=".ChangePassword" />
+        <activity android:name=".EmployeeDetail" />
+        <activity
+            android:name=".Request"
+            android:label="@string/title_activity_request" />
+        <activity android:name=".RequestHome" />
+        <activity android:name=".RequestStatus" />
+        <activity android:name=".Attendance" />
+        <activity android:name=".RequestMessage" />
+        <activity android:name=".Approved" />
+        <activity android:name=".Analysis" />
+        <activity android:name=".EmpAnalysis"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmpAnalysis">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/table">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:layout_weight="0.5"
+                android:layout_gravity="center">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18dp"
+                        android:text="Start Date"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+                    <TextView
+                        android:id="@+id/textViewS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:layout_weight="0.5"
+                android:layout_gravity="center">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18dp"
+                        android:text="End Date"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+                    <TextView
+                        android:id="@+id/textViewE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+            </TableRow>
+
+            <Button
+                android:layout_height="30dp"
+                android:id="@+id/button"
+                android:textSize="18dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:text="Submit"
+                android:layout_marginLeft="125dp"
+                android:layout_marginRight="125dp"/>
+            <com.github.mikephil.charting.charts.PieChart
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:id="@+id/PieChart"
+                android:layout_margin="25dp"
+                android:layout_centerHorizontal="true"/>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:layout_weight="0.5"
+                android:layout_gravity="center">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18dp"
+                        android:text="No of Days"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:layout_weight="0.5"
+                android:layout_gravity="center">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18dp"
+                        android:text="Present"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:layout_weight="0.5"
+                android:layout_gravity="center">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18dp"
+                        android:text="Half-Day"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:layout_weight="0.5"
+                android:layout_gravity="center">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18dp"
+                        android:text="Absent"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+            </TableRow>
+
+
+        </TableLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.karthi.attendance.Remove">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/remove" />
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Emp Id"
+                android:gravity="center"
+                android:inputType="text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="300dp"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="425dp"
+                android:text="Remove Employee"
+                android:onClick="remove"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
